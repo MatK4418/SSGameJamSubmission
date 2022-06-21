@@ -211,8 +211,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8398797948081664553}
   - component: {fileID: 8398797948081664552}
-  - component: {fileID: 8398797948081664559}
   - component: {fileID: 8398797948081664554}
+  - component: {fileID: 8900981639731004140}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Player
@@ -227,7 +227,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8398797948081664558}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -252,32 +252,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.3, z: 0}
---- !u!114 &8398797948081664559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8398797948081664558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4519bb95fb13b845aea1f4d8b0d691c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
-  accelSpeed: 5
-  haltSpeed: 10
-  moveVelocity: {x: 0, y: 0, z: 0}
-  jumpHeight: 10
-  checkCapsuleTop: {fileID: 8398797948373969749}
-  checkCapsuleBottom: {fileID: 8398797949329430626}
-  closeToGround: {fileID: 8398797949433332828}
-  walkableMask:
-    serializedVersion: 2
-    m_Bits: 128
-  playerCamera: {fileID: 8398797947825181517}
-  lookSpeed: 2
-  lookXLimit: 45
 --- !u!54 &8398797948081664554
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -294,6 +268,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &8900981639731004140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398797948081664558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b0c62334ab30a4a97a0d92d77f8653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 10
+  accelSpeed: 5
+  haltSpeed: 5
+  addedVelocity: {x: 0, y: 0, z: 0}
+  jumpHeight: 5
+  checkCapsuleTop: {fileID: 8398797948373969749}
+  checkCapsuleBottom: {fileID: 8398797949329430626}
+  closeToGround: {fileID: 8398797949433332828}
+  walkableMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerCamera: {fileID: 8398797947825181517}
+  lookSpeed: 2
+  lookXLimit: 45
 --- !u!1 &8398797948373969748
 GameObject:
   m_ObjectHideFlags: 0
