@@ -12,13 +12,6 @@ public class Weapons : ScriptableObject
 
     [SerializeField]
     public GameObject Bullet;
-
-    void Init()
-    {
-
-    }
-    
-
     public enum ShotType
     {
         Auto, Single, Spread

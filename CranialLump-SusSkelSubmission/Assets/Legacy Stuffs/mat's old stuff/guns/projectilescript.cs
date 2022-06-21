@@ -15,7 +15,7 @@ public class projectilescript : MonoBehaviour
     {
         bCollider = GetComponent<Collider>();
         rb = gameObject.GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * speed * 100f);
+        rb.AddForce(transform.forward * speed * 100f);
     }
     
     void FixedUpdate()
