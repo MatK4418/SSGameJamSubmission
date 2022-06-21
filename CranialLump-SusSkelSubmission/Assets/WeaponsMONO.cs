@@ -12,14 +12,18 @@ public class WeaponsMONO : MonoBehaviour
     [SerializeField]
     protected Weapons weapons;
 
-
+    public void Start()
+    {
+        
+    }
     bool CheckFireRate()
     {
-        if(Time.time >= fireTime)
+        if (Time.time >= fireTime)
         {
             fireTime = Time.time + (1f / weapons.fireRate);
             return true;
         }
+        
         return false;
     }
     public void Update()
@@ -35,7 +39,12 @@ public class WeaponsMONO : MonoBehaviour
                 createBullet(muzzle);
 
         }
-       
+        else if (weapons.shotType == Weapons.ShotType.Single)
+        {
+            createBullet(muzzle);
+            
+        }
+
     }
 
 
@@ -47,6 +56,6 @@ public class WeaponsMONO : MonoBehaviour
         return projectile;
     }
 
-
-    public abstract void Shoot();
+    //public abstract void Shoot();
+    
 }

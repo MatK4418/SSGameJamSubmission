@@ -8,7 +8,19 @@ public class Weapons : ScriptableObject
     public string weaponName;
     public float fireRate;
 
+    public ShotType shotType;
 
     [SerializeField]
     public GameObject Bullet;
+
+    void Init()
+    {
+
+    }
+    
+
+    public enum ShotType
+    {
+        Auto, Single, Spread
+    }
 }
