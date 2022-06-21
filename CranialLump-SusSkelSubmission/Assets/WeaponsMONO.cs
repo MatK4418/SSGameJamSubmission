@@ -22,4 +22,31 @@ public class WeaponsMONO : MonoBehaviour
         }
         return false;
     }
+    public void Update()
+    {
+        shootingInput();
+    }
+
+    void shootingInput()
+    {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            if (CheckFireRate())
+                createBullet(muzzle);
+
+        }
+       
+    }
+
+
+
+    public GameObject createBullet(Transform origin)
+    {
+        GameObject projectile = Instantiate(weapons.Bullet, origin.position, origin.rotation, null);
+
+        return projectile;
+    }
+
+
+    public abstract void Shoot();
 }
