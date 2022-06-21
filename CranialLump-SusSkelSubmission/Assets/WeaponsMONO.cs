@@ -16,6 +16,8 @@ public class WeaponsMONO : MonoBehaviour
     {
         
     }
+
+
     bool CheckFireRate()
     {
         if (Time.time >= fireTime)
@@ -29,6 +31,7 @@ public class WeaponsMONO : MonoBehaviour
     public void Update()
     {
         shootingInput();
+        
     }
 
     void shootingInput()
@@ -39,11 +42,11 @@ public class WeaponsMONO : MonoBehaviour
                 createBullet(muzzle);
 
         }
-        else if (weapons.shotType == Weapons.ShotType.Single)
+       /* else if (weapons.shotType == Weapons.ShotType.Single)
         {
             createBullet(muzzle);
             
-        }
+        }*/
 
     }
 

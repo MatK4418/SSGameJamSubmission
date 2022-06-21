@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Pistol
   m_EditorClassIdentifier: 
   weaponName: Pistol
-  fireRate: 1
+  fireRate: 2
   shotType: 1
   Bullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd, type: 3}
