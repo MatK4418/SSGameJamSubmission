@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ARBMovement : MonoBehaviour
 {
+    // (ARB stands for "Augmented RigidBody" as it is an iteration on "RBMovement". Soz if it sounds cheesy lmao. - Mat)
+
     // Movement Variables 
     private float curSpeedX;
     private float curSpeedZ;
@@ -54,8 +56,6 @@ public class ARBMovement : MonoBehaviour
 
         Vector3 forward = transform.TransformDirection(Vector3.forward); // Changes local transforms for left and right directions into global,
         Vector3 right = transform.TransformDirection(Vector3.right);     // changing depending on player rotation.
-        // (OBSOLETE CODE) float curSpeedX = maxSpeed * Input.GetAxis("Horizontal"); // THE INPUT.GETAXIS MULTIPLIER IS GIVING IT AN "ACCELERATION"-LIKE EFFECT BECAUSE IT RISES UP TO THE MAX VALUE OF 1 ON ITS OWN
-        // (OBSOLETE CODE) float curSpeedZ = maxSpeed * Input.GetAxis("Vertical"); // THIS MAKES MOVEMENT SUPER CONTROLLABLE ON CONTROLLER BUT THIS ISNT REAL ACCELERATION AAAAAAAAAAAAAAA
         if (Input.GetAxis("Horizontal") != 0)
         {
             if (Input.GetAxis("Horizontal") < 0 && (curSpeedX > -maxSpeed))
@@ -91,7 +91,6 @@ public class ARBMovement : MonoBehaviour
             }
         }
 
-        // (OBSOLETE CODE) if (Input.GetAxis("Horizontal") == 0) // This wouldn't come into play instantly and as a result would feel incredibly awkward. I couldn't use a lesser than as it would likely 
         if (!Input.GetKey(KeyCode.D) & !(Input.GetKey(KeyCode.A)))
         {
             if (grounded)
