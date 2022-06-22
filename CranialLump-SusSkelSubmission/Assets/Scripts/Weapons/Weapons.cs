@@ -11,9 +11,12 @@ public class Weapons : ScriptableObject
     public ShotType shotType;
 
     [SerializeField]
-    public GameObject Bullet;
+    public GameObject SingleBullet;
+    public GameObject AutoBullet;
+    public GameObject SpreadBullet;
     public enum ShotType
     {
         Auto, Single, Spread
     }
+    
 }

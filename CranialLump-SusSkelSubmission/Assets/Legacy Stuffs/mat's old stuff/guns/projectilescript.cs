@@ -20,7 +20,7 @@ public class projectilescript : MonoBehaviour
     
     void FixedUpdate()
     {
-        deathTimer -= Time.deltaTime;
+        deathTimer -= Time.deltaTime; //ras commenting to help his smooth brain me like this 
         if (deathTimer <= 0.0f)
         {
             Destroy(gameObject);
@@ -43,7 +43,8 @@ public class projectilescript : MonoBehaviour
 
         else if (other.gameObject.tag == "Environment")
         {
-            Instantiate(enviroParticles, contact.point, Quaternion.LookRotation(contact.normal, Vector3.up));
+            //Instantiate(enviroParticles, contact.point, Quaternion.LookRotation(contact.normal, Vector3.up)); 
+            //switching off for the time being because don't have particles in game
             Destroy(gameObject);
 
             //Credit for learning about contact points: https://www.youtube.com/watch?v=2bPd_dmqGuM

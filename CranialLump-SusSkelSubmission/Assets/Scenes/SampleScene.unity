@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 779115772}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 979429857}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 1335979942}
   m_Layer: 7
   m_Name: WalkableGround
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 1350971192}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 1776934534}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -952,7 +952,7 @@ PrefabInstance:
     - target: {fileID: 2092887860, guid: b3e79a549062fd745b5b6f87f7bf7c9f, type: 3}
       propertyPath: weapons
       value: 
-      objectReference: {fileID: 11400000, guid: 06942ea5fd3f41c44ac6c77ce86ebe4a,
+      objectReference: {fileID: 11400000, guid: 4b5b5ae543590a34c814794bd3817e3b,
         type: 2}
     - target: {fileID: 8398797948081664553, guid: b3e79a549062fd745b5b6f87f7bf7c9f,
         type: 3}

@@ -15,4 +15,9 @@ MonoBehaviour:
   weaponName: Machine gun
   fireRate: 5
   shotType: 0
-  Bullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd, type: 3}
+  SingleBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
+    type: 3}
+  AutoBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
+    type: 3}
+  SpreadBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
+    type: 3}
