@@ -38,7 +38,9 @@ public class projectilescript : MonoBehaviour
         
         else if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Light Enemy" || other.gameObject.tag == "Heavy Enemy")
         {
-            Instantiate(enemyParticles, contact.point, Quaternion.LookRotation(contact.normal, Vector3.up)); // Spawns blood splatter.
+            //switched off for the moment 
+            //Instantiate(enemyParticles, contact.point, Quaternion.LookRotation(contact.normal, Vector3.up)); // Spawns blood splatter. 
+            
         }
 
         else if (other.gameObject.tag == "Environment")

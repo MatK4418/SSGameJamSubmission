@@ -8,6 +8,8 @@ TagManager:
   - AutoBullet
   - SingleBullet
   - SpreadBullet
+  - Enemy
+  - Gun
   layers:
   - Default
   - TransparentFX

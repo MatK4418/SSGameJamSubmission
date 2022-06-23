@@ -7,8 +7,12 @@ public class Weapons : ScriptableObject
 {
     public string weaponName;
     public float fireRate;
-    public float radius;
+    
     public ShotType shotType;
+
+    public int ShotCount;
+    public float spreadAngle;
+
 
     [SerializeField]
     public GameObject SingleBullet;

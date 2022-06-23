@@ -12,6 +12,8 @@ public class WeaponsMONO : MonoBehaviour
     [SerializeField]
     protected Weapons weapons;
 
+    List<Quaternion> bullets;
+
     
 
     public void Start()
@@ -19,6 +21,14 @@ public class WeaponsMONO : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+        bullets = new List<Quaternion>(weapons.ShotCount);
+        for (int i = 0; i < weapons.ShotCount; i++)
+        {
+            bullets.Add(Quaternion.Euler(Vector3.zero));
+        }
+    }
 
     bool CheckFireRate()
     {
@@ -33,9 +43,11 @@ public class WeaponsMONO : MonoBehaviour
     public void Update()
     {
         shootingInput();
+       
         // Draw circles at the position of the GameObject, with different radii, number of segments and colors
        
         Debug.DrawCircle(transform.position, 4.0f, 8, Color.green);
+
 
     }
 
@@ -51,7 +63,23 @@ public class WeaponsMONO : MonoBehaviour
                 createAutoShotBullet(muzzle); 
 
             if (weapons.shotType == Weapons.ShotType.Spread && CheckFireRate())
-                createSpreadShotBullet(muzzle); 
+            {
+                createSpreadShotBullet(muzzle);
+                /* int i = 0;
+                 foreach (Quaternion quat in bullets)
+                 {
+                     bullets[i] = Random.rotation;
+
+                     weapons.SpreadBullet.transform.rotation = 
+                         Quaternion.RotateTowards(weapons.SpreadBullet.transform.rotation, bullets[i], weapons.spreadAngle);
+
+                     weapons.SpreadBullet.GetComponent<Rigidbody>().AddForce(weapons.SpreadBullet.transform.right * 100);
+                     createSpreadShotBullet(muzzle);
+
+                     i++;
+                 }*/
+            }
+                
         }
     }
 
@@ -65,6 +93,8 @@ public class WeaponsMONO : MonoBehaviour
    public GameObject createSpreadShotBullet(Transform origin)
     {
         GameObject projectile = Instantiate(weapons.SpreadBullet, origin.position, origin.rotation, null);
+
+       
 
         return projectile;
     }
