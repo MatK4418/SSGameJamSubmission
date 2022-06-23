@@ -248,7 +248,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.45
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.3, z: 0}
@@ -281,8 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
-  accelSpeed: 10
-  haltSpeed: 10
+  accelSpeed: 0.3
+  haltSpeed: 0.6
   moveVelocity: {x: 0, y: 0, z: 0}
   jumpHeight: 5
   checkCapsuleTop: {fileID: 8398797948373969749}

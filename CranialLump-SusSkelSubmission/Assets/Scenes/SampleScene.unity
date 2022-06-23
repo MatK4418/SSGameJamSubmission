@@ -1957,11 +1957,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1140349501}
     m_Modifications:
-    - target: {fileID: 2092887860, guid: b3e79a549062fd745b5b6f87f7bf7c9f, type: 3}
-      propertyPath: weapons
-      value: 
-      objectReference: {fileID: 11400000, guid: 06942ea5fd3f41c44ac6c77ce86ebe4a,
-        type: 2}
     - target: {fileID: 8398797948081664553, guid: b3e79a549062fd745b5b6f87f7bf7c9f,
         type: 3}
       propertyPath: m_RootOrder
