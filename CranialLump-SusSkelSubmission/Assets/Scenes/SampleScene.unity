@@ -188,7 +188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342354921 stripped
 GameObject:
@@ -208,6 +208,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b61124732529e504aa637186188cc4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &342354924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3190904960772117900, guid: 57190e65b2784f746a324496d2f990c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762871196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &392525105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,18 +1060,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191629727}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 14.575}
+  m_LocalRotation: {x: -0, y: -0.93589, z: 0, w: 0.35229233}
+  m_LocalPosition: {x: 0, y: 0, z: 2.370383}
   m_LocalScale: {x: 0.009520879, y: 0.009520879, z: 0.009520879}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1382788731}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 342354924}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -4.306, y: 1.872}
+  m_AnchoredPosition: {x: -3.0739532, y: 2.958}
   m_SizeDelta: {x: 1633, y: 888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1335979941
@@ -1378,6 +1384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382788731}
   - component: {fileID: 1382788732}
+  - component: {fileID: 1382788733}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -1459,6 +1466,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1382788733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382788730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ebf299729d4434193591499f827349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1382788732}
 --- !u!1 &1508963519
 GameObject:
   m_ObjectHideFlags: 0
