@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Environment
+  - AutoBullet
+  - SingleBullet
+  - SpreadBullet
   layers:
   - Default
   - TransparentFX

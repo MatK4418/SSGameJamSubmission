@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65a2f8847eb6a6e459422f1d768a1d31, type: 3}
-  m_Name: Pistol
+  m_Name: ShotGun
   m_EditorClassIdentifier: 
-  weaponName: Pistol
-  fireRate: 1.51
-  shotType: 1
-  SingleBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
-    type: 3}
-  AutoBullet: {fileID: 2928589157259656142, guid: f89bdf42e5edac54abc615bc07a5824f,
-    type: 3}
-  SpreadBullet: {fileID: 2928589157259656142, guid: 73d025a5f050dcb4dac534dd7ba3329b,
-    type: 3}
+  weaponName: 
+  fireRate: 0
+  shotType: 0
+  SingleBullet: {fileID: 0}
+  AutoBullet: {fileID: 0}
+  SpreadBullet: {fileID: 0}
