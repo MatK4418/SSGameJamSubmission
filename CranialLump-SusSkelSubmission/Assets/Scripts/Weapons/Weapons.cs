@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Weapon script Object", order = 1)]
+[CreateAssetMenu(menuName = "Create weapon", order = 1)]
 public class Weapons : ScriptableObject
 {
     public string weaponName;
@@ -16,7 +16,7 @@ public class Weapons : ScriptableObject
     public GameObject SpreadBullet;
     public enum ShotType
     {
-        Auto, Single, Spread
+        Auto , Single, Spread 
     }
     
 }

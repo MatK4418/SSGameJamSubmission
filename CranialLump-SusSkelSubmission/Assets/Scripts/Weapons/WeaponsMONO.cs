@@ -42,14 +42,15 @@ public class WeaponsMONO : MonoBehaviour
         {
 
             if (weapons.shotType == Weapons.ShotType.Single && CheckFireRate())
-                createSingleShotBullet(muzzle);
-            //else if (weapons.shotType == Weapons.ShotType) 
-            else if (weapons.shotType == Weapons.ShotType.Auto && CheckFireRate())
-                createAutoShotBullet(muzzle);
+                createSingleShotBullet(muzzle); Debug.Log("singShot");
+            
+             if (weapons.shotType == Weapons.ShotType.Auto && CheckFireRate())
+                createAutoShotBullet(muzzle); Debug.Log("AutoShot");
 
-            else if (weapons.shotType == Weapons.ShotType.Spread && CheckFireRate())
-                createSpreadShotBullet(muzzle);
+            if (weapons.shotType == Weapons.ShotType.Spread && CheckFireRate())
+                createSpreadShotBullet(muzzle); Debug.Log("SpreadShot");
                 
+
         }
       
 

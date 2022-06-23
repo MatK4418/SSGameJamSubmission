@@ -17,7 +17,7 @@ MonoBehaviour:
   shotType: 1
   SingleBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
     type: 3}
-  AutoBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
+  AutoBullet: {fileID: 2928589157259656142, guid: f89bdf42e5edac54abc615bc07a5824f,
     type: 3}
-  SpreadBullet: {fileID: 2928589157259656142, guid: 874a13d6076fc3540b80e30fc4be45fd,
+  SpreadBullet: {fileID: 2928589157259656142, guid: 73d025a5f050dcb4dac534dd7ba3329b,
     type: 3}
