@@ -7,7 +7,7 @@ public class Weapons : ScriptableObject
 {
     public string weaponName;
     public float fireRate;
-
+    public float radius;
     public ShotType shotType;
 
     [SerializeField]

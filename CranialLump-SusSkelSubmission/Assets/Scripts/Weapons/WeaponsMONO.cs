@@ -33,7 +33,10 @@ public class WeaponsMONO : MonoBehaviour
     public void Update()
     {
         shootingInput();
-        
+        // Draw circles at the position of the GameObject, with different radii, number of segments and colors
+       
+        Debug.DrawCircle(transform.position, 4.0f, 8, Color.green);
+
     }
 
     void shootingInput()
@@ -42,18 +45,20 @@ public class WeaponsMONO : MonoBehaviour
         {
 
             if (weapons.shotType == Weapons.ShotType.Single && CheckFireRate())
-                createSingleShotBullet(muzzle); Debug.Log("singShot");
+                createSingleShotBullet(muzzle); 
             
              if (weapons.shotType == Weapons.ShotType.Auto && CheckFireRate())
-                createAutoShotBullet(muzzle); Debug.Log("AutoShot");
+                createAutoShotBullet(muzzle); 
 
             if (weapons.shotType == Weapons.ShotType.Spread && CheckFireRate())
-                createSpreadShotBullet(muzzle); Debug.Log("SpreadShot");
-                
-
+                createSpreadShotBullet(muzzle); 
         }
-      
+    }
 
+    void circleThing(float circle)
+    {
+        circle = Mathf.PI * (Mathf.Pow(5, 2));
+        Debug.Log(circle);
     }
 
     
