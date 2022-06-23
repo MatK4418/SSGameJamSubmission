@@ -130,9 +130,9 @@ public class RBMovement : MonoBehaviour
     {
         if (curSpeedX != 0)
         {
-            if (curSpeedX > 1f)
+            if (curSpeedX > haltSpeed) // Here, one unit of halting speed is used as the margin for error. Previously this was a static "1".
                 curSpeedX -= haltSpeed;
-            else if (curSpeedX < -1f)
+            else if (curSpeedX < -haltSpeed) // Same as line 133.
                 curSpeedX += haltSpeed;
             else
                 curSpeedX = 0;
@@ -142,9 +142,9 @@ public class RBMovement : MonoBehaviour
     {
         if (curSpeedZ != 0)
         {
-            if (curSpeedZ > 1f)
+            if (curSpeedZ > haltSpeed)  // Same as line 133.
                 curSpeedZ -= haltSpeed;
-            else if (curSpeedZ < -1f)
+            else if (curSpeedZ < -haltSpeed)  // Same as line 133.
                 curSpeedZ += haltSpeed;
             else
                 curSpeedZ = 0;
