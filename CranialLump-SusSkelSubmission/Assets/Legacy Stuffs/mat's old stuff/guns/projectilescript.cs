@@ -11,6 +11,9 @@ public class projectilescript : MonoBehaviour
     public GameObject enemyParticles;
     public GameObject enviroParticles;
 
+    [SerializeField]
+    protected Health health;
+
     void Start()
     {
         bCollider = GetComponent<Collider>();
@@ -38,6 +41,9 @@ public class projectilescript : MonoBehaviour
         
         else if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Light Enemy" || other.gameObject.tag == "Heavy Enemy")
         {
+
+            Health.health--;
+            Destroy(gameObject);
             //switched off for the moment 
             //Instantiate(enemyParticles, contact.point, Quaternion.LookRotation(contact.normal, Vector3.up)); // Spawns blood splatter. 
             

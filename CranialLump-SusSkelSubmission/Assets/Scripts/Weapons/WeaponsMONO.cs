@@ -47,7 +47,7 @@ public class WeaponsMONO : MonoBehaviour
         // Draw circles at the position of the GameObject, with different radii, number of segments and colors
        
         Debug.DrawCircle(transform.position, 4.0f, 8, Color.green);
-
+        HitDetection();
 
     }
 
@@ -81,6 +81,10 @@ public class WeaponsMONO : MonoBehaviour
             }
                 
         }
+    }
+    void HitDetection()
+    {
+        
     }
 
     void circleThing(float circle)
