@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class enemyHP : MonoBehaviour
 {
-    public float totalHP;
+    public float maxHP;
     public float currentHP;
 
     public GameObject gibs;
     private Vector3 gibSpawn;
 
-    public float AutoDamage = 10f; // Default values, made them modular so that you can make "armored" enemies by reducing damage through editor.
+    public float AutoDamage = 10f;
     public float SpreadDamage = 25f;
     public float SingleDamage = 40f;
 
     void Start()
     {
-        currentHP = totalHP;
+        currentHP = maxHP;
     }
 
     // Spawns blood splatters depending on where the enemy was struck. More realistic/satisfying.
@@ -38,9 +38,9 @@ public class enemyHP : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("AutoBullet"))
             TakeDamage(AutoDamage);
-        if (collision.gameObject.CompareTag("SpreadBullet"))
+        else if (collision.gameObject.CompareTag("SpreadBullet"))
             TakeDamage(SpreadDamage);
-        if (collision.gameObject.CompareTag("SingleBullet"))
+        else if (collision.gameObject.CompareTag("SingleBullet"))
             TakeDamage(SingleDamage);
     }
 

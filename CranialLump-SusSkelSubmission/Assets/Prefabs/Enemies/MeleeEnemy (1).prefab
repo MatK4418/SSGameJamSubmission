@@ -467,8 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b587bf024670fc346a8d193d3a5427ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHP: 100
-  currentHP: 0
+  maxHealth: 200
+  currentHealth: 0
   gibs: {fileID: 0}
   AutoDamage: 10
   SpreadDamage: 25
