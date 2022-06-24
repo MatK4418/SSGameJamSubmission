@@ -16,36 +16,8 @@ public class playerInventory : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        /*     //DEPRECATED, INEFFICIENT AND CAN CAUSE SLOWDOWN//
-        // Boolean Pickups
-        if (other.CompareTag("Red Key"))
-            haveRedKey = true;
-        else if (other.CompareTag("Blue Key"))
-            haveBlueKey = true;
-        else if (other.CompareTag("Yellow Key"))
-            haveYellowKey = true;
-
-        // Ammo Pickups
-        else if (other.CompareTag("Pistol Pickup"))
-            pistolAmmo += 12;
-        else if (other.CompareTag("Shotgun Pickup"))
-            shotgunAmmo += 6;
-        else if (other.CompareTag("Launcher Pickup"))
-            rocketAmmo += 2;
-        else if (other.CompareTag("Pistol Ammo"))
-            pistolAmmo += 24;
-        else if (other.CompareTag("Shotgun Ammo"))
-            shotgunAmmo += 16;
-        else if (other.CompareTag("Launcher Ammo"))
-            rocketAmmo += 4;
-
-        // Health Pickups
-        else if (other.CompareTag("Healing Item"))
-            pHP.currentHP += 20f;
-        */
-
-        // More efficient since its a switch statement.
-        switch (other.transform.tag)                                        // More efficient since its a switch statement. (NOTE: SINCE ASHE TOLD YOU THIS, TRY TO PASS THIS OFF AS "QUALITATIVE FEEDBACK")
+        // Effient switch statement is efficient.
+        switch (other.transform.tag)
         {
             // Key Pickups
             case "Red Key":

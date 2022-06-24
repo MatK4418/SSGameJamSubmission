@@ -9,7 +9,7 @@ public class detectPlayer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") | other.CompareTag("Bullet") | other.CompareTag("Heavy Bullet") | other.CompareTag("Rocket"))
+        if (other.CompareTag("Player") | other.CompareTag("AutoBullet") | other.CompareTag("SingleBullet") | other.CompareTag("SpreadBullet"))
         {
             detected = true;
             pTransform = other.GetComponent<Transform>();

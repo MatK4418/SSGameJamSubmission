@@ -29,7 +29,7 @@ public class enemyProjectile : MonoBehaviour
     {
         // Ignores collision if it hits itself or a player projectile
         
-        if (other.gameObject.tag == "Light Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             Physics.IgnoreCollision(other.transform.GetComponent<Collider>(), bCollider);
         }
@@ -45,13 +45,17 @@ public class enemyProjectile : MonoBehaviour
                 playerHP pHP = other.gameObject.GetComponent<playerHP>();
                 pHP.pTakeDamage(20f);
 
-                Instantiate(explosionParticles, contact.point, Quaternion.LookRotation(Vector3.up, Vector3.up));
+                if (explosionParticles != null)
+                    Instantiate(explosionParticles, contact.point, Quaternion.LookRotation(Vector3.up, Vector3.up));
+
                 Destroy(gameObject);
             }
 
-            else if (other.gameObject.tag == "Environment" || other.gameObject.tag == "Heavy Enemy")
+            else if (other.gameObject.tag == "Environment")
             {
-                Instantiate(explosionParticles, contact.point, Quaternion.LookRotation(Vector3.up, Vector3.up));
+                if (explosionParticles != null)
+                    Instantiate(explosionParticles, contact.point, Quaternion.LookRotation(Vector3.up, Vector3.up));
+
                 Destroy(gameObject);
 
                 //Credit for learning about contact points: https://www.youtube.com/watch?v=2bPd_dmqGuM

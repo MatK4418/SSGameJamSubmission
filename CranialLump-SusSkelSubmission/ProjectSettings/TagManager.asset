@@ -10,6 +10,8 @@ TagManager:
   - SpreadBullet
   - Enemy
   - Gun
+  - Pickup
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX

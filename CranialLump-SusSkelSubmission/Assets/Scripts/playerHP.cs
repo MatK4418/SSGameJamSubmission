@@ -18,7 +18,10 @@ public class playerHP : MonoBehaviour
     {
         if (currentHP <= 0f)
         {
-            // Screen Shake
+            // Take away controls
+            // Unlock rigidbody rotation constraints (Makes player fall over)
+            // Screen Shake + Red Overlay
+            // "GAME OVER"
         }
     }
 
@@ -26,6 +29,5 @@ public class playerHP : MonoBehaviour
     public void pTakeDamage(float damage)
     {
         currentHP -= damage;
-        Debug.Log("Player HP: " + currentHP);
     }
 }

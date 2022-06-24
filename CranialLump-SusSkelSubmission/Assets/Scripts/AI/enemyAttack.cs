@@ -17,24 +17,14 @@ public class enemyAttack : MonoBehaviour
         {
             meleeMode = true;
         }
-
         // Ranged Attack
         else
         {
             pObject = GameObject.Find("PlayerObject");
             attackNow = true;
         }
-    }
 
-    private void Update()
-    {
-        /*
-        // Ranged Attack Continued (MOVED THIS PART TO CHASE SCRIPT)
-        if (!meleeMode && attackNow)
-        {
-            attackNow = false;
-            StartCoroutine(Cooldown(2f));
-        } */
+        // Honestly kinda unnecessary, however uses a cool function :smiling_face_with_3_hearts:
     }
 
     private void OnTriggerStay(Collider other)
@@ -81,7 +71,5 @@ public class enemyAttack : MonoBehaviour
         playerHP pHP = other.gameObject.GetComponent<playerHP>();
         pHP.pTakeDamage(40f);
         attackNow = true;
-
-
     }
 }
