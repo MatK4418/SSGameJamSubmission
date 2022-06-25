@@ -7,6 +7,8 @@ public class WeaponsMONO : MonoBehaviour
     [SerializeField]
     Transform muzzle;
 
+    public Transform[] pelletMuzzle;
+
     float fireTime = 0f;
 
     [SerializeField]
@@ -64,7 +66,14 @@ public class WeaponsMONO : MonoBehaviour
 
             if (weapons.shotType == Weapons.ShotType.Spread && CheckFireRate())
             {
-                createSpreadShotBullet(muzzle);
+                createSpreadShotBullet(pelletMuzzle[0]);
+                createSpreadShotBullet(pelletMuzzle[1]);
+                createSpreadShotBullet(pelletMuzzle[2]);
+                createSpreadShotBullet(pelletMuzzle[3]);
+                createSpreadShotBullet(pelletMuzzle[4]);
+                createSpreadShotBullet(pelletMuzzle[5]);
+                createSpreadShotBullet(pelletMuzzle[6]);
+                createSpreadShotBullet(pelletMuzzle[7]);
                 /* int i = 0;
                  foreach (Quaternion quat in bullets)
                  {
@@ -116,6 +125,7 @@ public class WeaponsMONO : MonoBehaviour
         return projectile;
     }
 
+    
     //public abstract void Shoot();
     
 }
