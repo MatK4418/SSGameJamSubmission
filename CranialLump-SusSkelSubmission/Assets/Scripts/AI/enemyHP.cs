@@ -29,8 +29,8 @@ public class enemyHP : MonoBehaviour
         if(currentHP > 0)
         {
             //slider = GameObject.Find("Slider").GetComponent<Slider>();
-            player = GameObject.Find("PlayerObject");
-            slider.maxValue = maxHP;
+            //player = GameObject.Find("PlayerObject");
+            //slider.maxValue = maxHP;
         }
     }
 

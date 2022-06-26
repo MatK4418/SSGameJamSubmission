@@ -9,12 +9,12 @@ public class GunPlaceOnGun : WeaponsMONO
         throw new System.NotImplementedException();
     }*/
 
-    private void Start()
+    private void Start1()
     {
         base.Start();
     }
 
-    private void Update()
+    private void Update1()
     {
         base.Update();
     }

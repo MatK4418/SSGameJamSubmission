@@ -5,13 +5,13 @@ using UnityEngine;
 public class EnemyHealth : HealthMONO
 {
     // Start is called before the first frame update
-    void Start()
+    void Start1()
     {
         base.Start();
     }
 
     // Update is called once per frame
-    void Update()
+    void Update1()
     {
         base.Update();
     }

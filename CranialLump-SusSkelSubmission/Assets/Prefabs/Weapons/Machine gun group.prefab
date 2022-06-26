@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b607181d3537f9c4db452ee184951591, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   muzzle: {fileID: 4411178774806927999}
+  pelletMuzzle: []
   weapons: {fileID: 11400000, guid: 4b5b5ae543590a34c814794bd3817e3b, type: 2}
 --- !u!1 &4411178774806927872
 GameObject:
