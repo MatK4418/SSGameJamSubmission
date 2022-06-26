@@ -10,12 +10,16 @@ public class sliderHealthbar : MonoBehaviour
     protected Health health;
     public Slider slider;
 
+    
+
     private void Awake()
     {
-        Health.health = 10;
+        //Health.health = 10;
+        //enemyHP.currentHP = 100;
         slider = GetComponent<Slider>();
 
-        slider.maxValue = Health.health;
+        //slider.maxValue = enemyHP.currentHP;
+        //lider.maxValue = Health.health;
 
 
     }
@@ -23,6 +27,7 @@ public class sliderHealthbar : MonoBehaviour
     
     void Update()
     {
-       slider.value = Health.health;
+        //slider.value = enemyHP.currentHP;
+       //slider.value = Health.health;
     }
 }

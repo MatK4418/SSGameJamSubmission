@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class enemyHP : MonoBehaviour
 {
@@ -11,18 +13,32 @@ public class enemyHP : MonoBehaviour
     private Vector3 gibSpawn;
 
     public float AutoDamage = 10f;
-    public float SpreadDamage = 25f;
+    public float SpreadDamage = 5f;
     public float SingleDamage = 40f;
 
-    [SerializeField]
-    protected Health health;
+    private Slider slider;
+    private GameObject player;
 
-    void Start()
+
+
+    private void Awake()
     {
+        
         currentHP = maxHP;
+        if(currentHP > 0)
+        {
+            slider = GameObject.Find("Slider").GetComponent<Slider>();
+            player = GameObject.Find("PlayerObject");
+            slider.maxValue = maxHP;
+        }
     }
 
     // Spawns blood splatters depending on where the enemy was struck. More realistic/satisfying.
+
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         if (currentHP <= 0f)
@@ -34,6 +50,9 @@ public class enemyHP : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        else
+            slider.gameObject.transform.rotation = player.gameObject.transform.rotation;
+        slider.value = currentHP;
     }
 
     // Enemy Direct Impact Damage
@@ -51,6 +70,7 @@ public class enemyHP : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHP -= damage;
-        //Health.health -= damage;
+        
     }
+
 }
