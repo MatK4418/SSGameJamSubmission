@@ -14,6 +14,9 @@ public class enemyHP : MonoBehaviour
     public float SpreadDamage = 25f;
     public float SingleDamage = 40f;
 
+    [SerializeField]
+    protected Health health;
+
     void Start()
     {
         currentHP = maxHP;
@@ -48,5 +51,6 @@ public class enemyHP : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHP -= damage;
+        //Health.health -= damage;
     }
 }
