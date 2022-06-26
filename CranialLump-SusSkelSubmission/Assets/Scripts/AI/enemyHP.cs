@@ -16,7 +16,8 @@ public class enemyHP : MonoBehaviour
     public float SpreadDamage = 5f;
     public float SingleDamage = 40f;
 
-    private Slider slider;
+    [SerializeField]
+    Slider slider;
     private GameObject player;
 
 
@@ -27,7 +28,7 @@ public class enemyHP : MonoBehaviour
         currentHP = maxHP;
         if(currentHP > 0)
         {
-            slider = GameObject.Find("Slider").GetComponent<Slider>();
+            //slider = GameObject.Find("Slider").GetComponent<Slider>();
             player = GameObject.Find("PlayerObject");
             slider.maxValue = maxHP;
         }
@@ -41,6 +42,7 @@ public class enemyHP : MonoBehaviour
     }
     void Update()
     {
+        slider.value = currentHP;
         if (currentHP <= 0f)
         {
             if (gibs != null)
@@ -51,8 +53,10 @@ public class enemyHP : MonoBehaviour
             Destroy(gameObject);
         }
         else
-            slider.gameObject.transform.rotation = player.gameObject.transform.rotation;
-        slider.value = currentHP;
+        {
+            slider.transform.rotation = player.gameObject.transform.rotation;
+
+        }
     }
 
     // Enemy Direct Impact Damage
