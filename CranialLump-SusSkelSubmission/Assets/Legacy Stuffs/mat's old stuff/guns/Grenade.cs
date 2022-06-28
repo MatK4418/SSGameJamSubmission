@@ -77,7 +77,7 @@ public class Grenade : MonoBehaviour
                 enemyHP eHP = nearbyObject.GetComponent<enemyHP>();
                 if (eHP != null)
                 {
-                    eHP.TakeDamage(10f);
+                    eHP.TakeDamage(10);
                 }
             }
             if (nearbyObject.gameObject.tag == "Player")
@@ -85,7 +85,7 @@ public class Grenade : MonoBehaviour
                 playerHP pHP = nearbyObject.GetComponent<playerHP>();
                 if (pHP != null)
                 {
-                    pHP.pTakeDamage(10f);
+                    pHP.pTakeDamage(10);
                 }
             }
         }
