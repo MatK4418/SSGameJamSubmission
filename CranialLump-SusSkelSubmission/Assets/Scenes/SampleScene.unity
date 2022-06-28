@@ -1851,9 +1851,9 @@ GameObject:
   - component: {fileID: 2329487107678512408}
   - component: {fileID: 7054543863709635290}
   - component: {fileID: 7054543863709635291}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: arenaBorders
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1870,9 +1870,9 @@ GameObject:
   - component: {fileID: 4018674591627321927}
   - component: {fileID: 6277508747549042796}
   - component: {fileID: 6277508747549042797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: arenaGround
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1889,9 +1889,9 @@ GameObject:
   - component: {fileID: 7253944947729313969}
   - component: {fileID: 1291370705745979535}
   - component: {fileID: 7253944947729313970}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: arenaWalls
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1946,9 +1946,9 @@ GameObject:
   - component: {fileID: 5753834256929718365}
   - component: {fileID: 8874260123678224261}
   - component: {fileID: 8874260123678224262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: arenaHemisphere
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
