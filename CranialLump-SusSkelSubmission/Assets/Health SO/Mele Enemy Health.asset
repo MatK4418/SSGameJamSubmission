@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Mele Enemy Health
   m_EditorClassIdentifier: 
   HealthName: Melee Enemy
-  ValueHealth: -20
+  ValueHealth: -5
   maxHealth: 100
   AutoDamage: 15
-  SpreadDamage: 15
+  SpreadDamage: 5
   SingleDamage: 30
