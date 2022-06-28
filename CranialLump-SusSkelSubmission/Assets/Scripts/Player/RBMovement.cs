@@ -59,14 +59,14 @@ public class RBMovement : MonoBehaviour
         // (OBSOLETE CODE) float curSpeedZ = maxSpeed * Input.GetAxis("Vertical"); // THIS MAKES MOVEMENT SUPER CONTROLLABLE ON CONTROLLER BUT THIS ISNT REAL ACCELERATION AAAAAAAAAAAAAAA
         if (Input.GetAxis("Horizontal") != 0)
         {
-            if (Input.GetAxis("Horizontal") < 0 && (curSpeedX > -maxSpeed))
+            if (Input.GetAxis("Horizontal") < 0 && (curSpeedX > -maxSpeed)) // If player is holding left button and they're not at max speed.
             {
                 if (grounded)
                     curSpeedX -= accelSpeed;
                 else
                     curSpeedX -= (0.2f * accelSpeed);
             }
-            if (Input.GetAxis("Horizontal") > 0 && (curSpeedX < maxSpeed))
+            if (Input.GetAxis("Horizontal") > 0 && (curSpeedX < maxSpeed)) // If player is holding right button and they're not at max speed.
             {
                 if (grounded)
                     curSpeedX += accelSpeed;
@@ -76,14 +76,14 @@ public class RBMovement : MonoBehaviour
         }
         if (Input.GetAxis("Vertical") != 0)
         {
-            if (Input.GetAxis("Vertical") < 0 && (curSpeedZ > -maxSpeed))
+            if (Input.GetAxis("Vertical") < 0 && (curSpeedZ > -maxSpeed)) // If player is holding backwards button and they're not at max speed.
             {
                 if (grounded)
                     curSpeedZ -= accelSpeed;
                 else
                     curSpeedZ -= (0.2f * accelSpeed);
             }
-            if (Input.GetAxis("Vertical") > 0 && (curSpeedZ < maxSpeed))
+            if (Input.GetAxis("Vertical") > 0 && (curSpeedZ < maxSpeed)) // If player is holding forwards button and they're not at max speed.
             {
                 if (grounded)
                     curSpeedZ += accelSpeed;
@@ -93,12 +93,12 @@ public class RBMovement : MonoBehaviour
         }
 
         // (OBSOLETE CODE) if (Input.GetAxis("Horizontal") == 0) // This wouldn't come into play instantly and as a result would feel incredibly awkward. I couldn't use a lesser than as it would likely 
-        if (!Input.GetKey(KeyCode.D) & !(Input.GetKey(KeyCode.A)))
+        if (!(Input.GetKey(KeyCode.D)) & !(Input.GetKey(KeyCode.A)))
         {
             if (grounded)
                 haltX();
         }
-        if (!Input.GetKey(KeyCode.W) & !(Input.GetKey(KeyCode.S)))
+        if (!(Input.GetKey(KeyCode.W)) & !(Input.GetKey(KeyCode.S)))
         {
             if (grounded)
                 haltZ();
@@ -148,6 +148,16 @@ public class RBMovement : MonoBehaviour
                 curSpeedZ += haltSpeed;
             else
                 curSpeedZ = 0;
+        }
+    }
+
+    // Wallstuck QuickFix
+    void OnCollisionStay(Collision collision)
+    {
+        if (!grounded)
+        {
+            haltX();
+            haltZ();
         }
     }
 }
