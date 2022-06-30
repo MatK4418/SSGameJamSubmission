@@ -39,6 +39,9 @@ public class playerKillScore : MonoBehaviour
             case 3:
                 virticleBackUi.SetActive(true);
                 break;
+            case 4:
+                intefaceUI.SetActive(true);
+                break;
         }
     }
 }
