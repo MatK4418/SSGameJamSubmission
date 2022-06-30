@@ -1,0 +1,66 @@
+newmtl lambert9SG
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd allguns_pistolSet_Albedo.png
+bump allguns_pistolSet_Height.png
+map_bump allguns_pistolSet_Normal.png
+newmtl lambert10SG
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd allguns_shotgunSet_Albedo.png
+bump allguns_shotgunSet_Height.png
+map_bump allguns_shotgunSet_Normal.png
+newmtl lambert14SG
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd allguns_bullet3Set_Albedo.png
+bump allguns_bullet3Set_Height.png
+map_bump allguns_bullet3Set_Normal.png
+newmtl lambert11SG
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd allguns_rifleSet_Albedo.png
+bump allguns_rifleSet_Height.png
+map_bump allguns_rifleSet_Normal.png
+newmtl lambert13SG
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd allguns_bullet2Set_Albedo.png
+bump allguns_bullet2Set_Height.png
+map_bump allguns_bullet2Set_Normal.png
+newmtl lambert12SG
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd allguns_bullet1Set_Albedo.png
+bump allguns_bullet1Set_Height.png
+map_bump allguns_bullet1Set_Normal.png
