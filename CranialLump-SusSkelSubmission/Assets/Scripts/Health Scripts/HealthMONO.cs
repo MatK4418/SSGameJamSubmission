@@ -10,6 +10,9 @@ public class HealthMONO : MonoBehaviour
     [SerializeField]
     protected HealthOS health;
 
+   
+    protected playerKillScore playerKillScore;
+
 
     public void Start()
     {
@@ -23,7 +26,16 @@ public class HealthMONO : MonoBehaviour
         slider.value = health.ValueHealth;
 
         if (health.ValueHealth <= 0)
-            Destroy(gameObject);
+        {
+            if (gameObject.activeInHierarchy)
+            {
+                playerKillScore.Score += 1;
+            }
+           
+           Destroy(gameObject);
+        }
+            
+           
     }
 
     void OnCollisionEnter(Collision collision)
