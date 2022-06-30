@@ -802,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 261856352}
+  deathGibs: {fileID: 2439241564977060, guid: a8405b66f5f4f0b43a27a80aec12bd5b, type: 3}
   health: {fileID: 11400000, guid: 4cb81e9ccfa0e6c4298284f3099c58bb, type: 2}
 --- !u!1 &959912947218207527
 GameObject:

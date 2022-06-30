@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class HealthMONO : MonoBehaviour
 {
     public Slider slider;
+    public GameObject deathGibs;
 
     [SerializeField]
     protected HealthOS health;
 
-   
     protected playerKillScore playerKillScore;
+    private Vector3 gibSpawn;
 
 
     public void Start()
@@ -31,8 +32,16 @@ public class HealthMONO : MonoBehaviour
             {
                 playerKillScore.Score += 1;
             }
-           
-           Destroy(gameObject);
+
+            // Mat Code .O.
+            if (deathGibs != null)
+            {
+                gibSpawn = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + 0.1f), gameObject.transform.position.z);
+                Instantiate(deathGibs, gibSpawn, Quaternion.LookRotation(Vector3.up, Vector3.up));
+            }
+            // Mat Code end. :pensive:
+
+            Destroy(gameObject);
         }
             
            
