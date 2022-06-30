@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89b52ae74795dd747a8f5ef422b623ba, type: 3}
-  m_Name: Mele Enemy Health
+  m_Name: Ranged Enemy Health 8
   m_EditorClassIdentifier: 
-  HealthName: Melee Enemy
-  ValueHealth: -5
+  HealthName: Ranged Enemy 8
+  ValueHealth: 70
   maxHealth: 100
   AutoDamage: 15
   SpreadDamage: 5
