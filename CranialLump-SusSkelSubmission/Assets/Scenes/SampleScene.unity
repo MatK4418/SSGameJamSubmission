@@ -211,6 +211,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MeleeEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4102199912531199360, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4102199912531199363, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
       propertyPath: m_RootOrder
@@ -278,6 +283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
+      propertyPath: playerObjectEditor
+      value: 
+      objectReference: {fileID: 1061469190}
+    - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
       propertyPath: validStates.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 9b4e797f04542cb4388fecaf68d2b5d8,
@@ -299,6 +309,11 @@ PrefabInstance:
       propertyPath: pTransform
       value: 
       objectReference: {fileID: 612234413}
+    - target: {fileID: 4102199913402936173, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4102199914051319263, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -400,6 +415,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'RangedEnemy '
       objectReference: {fileID: 0}
+    - target: {fileID: 959912945881438985, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 959912945881438986, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -455,6 +475,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
+      propertyPath: playerObjectEditor
+      value: 
+      objectReference: {fileID: 1061469190}
     - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
         type: 3}
       propertyPath: validStates.Array.data[0]
@@ -932,6 +957,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002777020}
   m_CullTransparentMesh: 1
+--- !u!1 &1061469190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8398797948081664558, guid: b3e79a549062fd745b5b6f87f7bf7c9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8398797947614135940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1121126419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5312314090936705513, guid: b3e79a549062fd745b5b6f87f7bf7c9f,
@@ -1634,6 +1665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RangedEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 959912945881438985, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 959912945881438986, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -1700,6 +1736,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 6.58
       objectReference: {fileID: 0}
+    - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
+      propertyPath: playerObjectEditor
+      value: 
+      objectReference: {fileID: 1061469190}
     - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
         type: 3}
       propertyPath: validStates.Array.data[0]
@@ -1974,6 +2015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MeleeEnemy '
       objectReference: {fileID: 0}
+    - target: {fileID: 4102199912531199360, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4102199912531199363, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
       propertyPath: m_RootOrder
@@ -2029,6 +2075,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
+      propertyPath: playerObjectEditor
+      value: 
+      objectReference: {fileID: 1061469190}
     - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
       propertyPath: validStates.Array.data[0]

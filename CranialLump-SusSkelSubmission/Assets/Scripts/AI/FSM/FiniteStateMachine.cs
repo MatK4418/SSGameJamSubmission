@@ -7,8 +7,9 @@ public class FiniteStateMachine : MonoBehaviour
 {
     AbstractFSMState currentState;
 
-    [SerializeField]
     private GameObject thisEnemy;
+    [SerializeField]
+    private GameObject playerObjectEditor;
 
     [SerializeField]
     private List<AbstractFSMState> validStates;
@@ -31,6 +32,7 @@ public class FiniteStateMachine : MonoBehaviour
             state.SetExecutingNPC(npc);
             state.SetNavMeshAgent(navMeshAgent);
             state.SetNPC(thisEnemy); // <--- Sets the current gameobject to the FSM
+            state.SetPlayerObject(playerObjectEditor); // <-- Sets the player object to FSM
             fsmStates.Add(state.StateType, state);
         }
     }

@@ -25,6 +25,7 @@ public abstract class AbstractFSMState : ScriptableObject
     protected FiniteStateMachine fsm;
 
     protected GameObject enemyObj; // i made this :^)
+    protected GameObject playerObj; // This too :^)
 
     public ExecutionState ExecutionState { get; protected set; }
     public FSMStateType StateType { get; protected set; }
@@ -79,5 +80,12 @@ public abstract class AbstractFSMState : ScriptableObject
     {
         if (npcObj != null)
             enemyObj = npcObj;
+    }
+
+    // Allows a Monobehaviour to set the player Game Object to the FSM
+    public virtual void SetPlayerObject(GameObject pObjFSM)
+    {
+        if (pObjFSM != null)
+            playerObj = pObjFSM;
     }
 }

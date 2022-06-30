@@ -8,12 +8,11 @@ using UnityEngine.AI;
 public class ChaseScript : AbstractFSMState
 {
     private NavMeshAgent enemyNav;
-    private GameObject playerObj;
+    private GameObject[] findArray;
     private enemyAttack eAttack;
 
     public override void OnEnable()
     {
-        playerObj = GameObject.Find("PlayerObject"); // Lazy find call.
         base.OnEnable();
         StateType = FSMStateType.CHASE;
     }
@@ -29,7 +28,7 @@ public class ChaseScript : AbstractFSMState
             if (eAttack.meleeMode == true)
                 enemyNav.stoppingDistance = 4f;
             else if (eAttack.meleeMode == false)
-                enemyNav.stoppingDistance = 8f;
+                enemyNav.stoppingDistance = 20f;
         }
         
 
