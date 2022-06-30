@@ -7,7 +7,8 @@ public class playerKillScore : MonoBehaviour
 {
     [SerializeField]
     GameObject speedometer, intefaceUI, virticleBackUi, text;
-
+    [SerializeField]
+    GameObject[] enemies;
 
 
     public static int Score;
@@ -35,12 +36,16 @@ public class playerKillScore : MonoBehaviour
                 break;
             case 2:
                 speedometer.SetActive(true);
+                enemies[0].SetActive(true);
+                enemies[1].SetActive(true);
                 break;
             case 3:
                 virticleBackUi.SetActive(true);
                 break;
             case 4:
                 intefaceUI.SetActive(true);
+                enemies[2].SetActive(true);
+                enemies[3].SetActive(true);
                 break;
         }
     }

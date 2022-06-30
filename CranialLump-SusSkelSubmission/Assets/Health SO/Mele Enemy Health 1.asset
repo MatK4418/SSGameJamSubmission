@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b52ae74795dd747a8f5ef422b623ba, type: 3}
   m_Name: Mele Enemy Health 1
   m_EditorClassIdentifier: 
-  HealthName: Melee Enemy
+  HealthName: Melee Enemy 1
   ValueHealth: -5
   maxHealth: 100
   AutoDamage: 15
