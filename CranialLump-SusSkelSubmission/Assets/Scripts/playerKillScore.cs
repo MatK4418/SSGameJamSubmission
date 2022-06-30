@@ -6,7 +6,7 @@ using UnityEngine;
 public class playerKillScore : MonoBehaviour
 {
     [SerializeField]
-    GameObject speedometer, intefaceUI, virticleBackUi, text;
+    GameObject speedometer, intefaceUI, virticleBackUi, text, endScreen;
     [SerializeField]
     GameObject[] enemies;
 
@@ -19,6 +19,7 @@ public class playerKillScore : MonoBehaviour
         intefaceUI.SetActive(false);
         virticleBackUi.SetActive(false);
         text.SetActive(false);
+        endScreen.SetActive(false);
     }
 
     private void Update()
@@ -77,6 +78,9 @@ public class playerKillScore : MonoBehaviour
             case 12:
                 enemies[10].SetActive(true);
                 enemies[11].SetActive(true);
+                break;
+            case 14:
+                endScreen.SetActive(true);
                 break;
         }
     }

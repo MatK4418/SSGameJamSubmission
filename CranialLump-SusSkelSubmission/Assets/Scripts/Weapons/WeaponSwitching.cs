@@ -7,7 +7,7 @@ public class WeaponSwitching : MonoBehaviour
     [SerializeField]
     GameObject Auto, Spread, Single;
 
-    
+    playerKillScore playerKillScore;
   
 
    /* public enum Weapon
@@ -18,26 +18,26 @@ public class WeaponSwitching : MonoBehaviour
    
     private void Update()
     {
-      /*  switch (Weapon)
-        {
-            case Weapon.automatic:
-                autoBool = true;
-                spreadBool = false;
-                singleBool = false;
-                break;
+        /*  switch (Weapon)
+          {
+              case Weapon.automatic:
+                  autoBool = true;
+                  spreadBool = false;
+                  singleBool = false;
+                  break;
 
-            case Weapon.Shotgun:
-                autoBool = false;
-                spreadBool = true;
-                singleBool = false;
-                break;
+              case Weapon.Shotgun:
+                  autoBool = false;
+                  spreadBool = true;
+                  singleBool = false;
+                  break;
 
-            case Weapon.Pistol:
-                autoBool = false;
-                spreadBool = false;
-                singleBool = true;
-                break;
-        }*/
+              case Weapon.Pistol:
+                  autoBool = false;
+                  spreadBool = false;
+                  singleBool = true;
+                  break;
+          }*/
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -46,7 +46,7 @@ public class WeaponSwitching : MonoBehaviour
             Single.SetActive(true);
            
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2)) 
         {
             Auto.SetActive(false);
             Spread.SetActive(true);
@@ -54,7 +54,7 @@ public class WeaponSwitching : MonoBehaviour
            
           
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3)) 
         {
             Auto.SetActive(true);
             Spread.SetActive(false);
