@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 45083
+  controlID: 20667
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 45084
+  controlID: 20619
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 45085
+  controlID: 20610
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -412,7 +412,7 @@ MonoBehaviour:
       index: 10
       layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -421,9 +421,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 16.685001, y: 0.99454474, z: 3.1002011}
+    m_Target: {x: 7.7383633, y: -0.8752899, z: -6.801381}
     speed: 2
-    m_Value: {x: 16.685001, y: 0.99454474, z: 3.1002011}
+    m_Value: {x: 7.7383633, y: -0.8752899, z: -6.801381}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -470,13 +470,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0030599572, y: -0.9900181, z: 0.14233774, w: 0.016511826}
+    m_Target: {x: 0.09392487, y: 0.8966954, z: -0.22981821, w: 0.36741465}
     speed: 2
-    m_Value: {x: 0.0030589204, y: -0.98968273, z: 0.14228952, w: 0.016506232}
+    m_Value: {x: 0.09389228, y: 0.8963842, z: -0.22973846, w: 0.36728716}
   m_Size:
-    m_Target: 1.2736809
+    m_Target: 11.741074
     speed: 2
-    m_Value: 1.2736809
+    m_Value: 11.741074
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -520,8 +520,8 @@ MonoBehaviour:
     y: 0
     width: 253
     height: 678
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -561,7 +561,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: cadcfbff1aeffbff12f0fbffd0f0fbffd2f0fbff90f1fbff92f1fbff74f2fbff76f2fbffb60bfcfff0b2ffff70c8ffff5acaffff48f9ffff32fbffffc26a0000c46a0000d86a0000f66a0000106b0000366b0000467900006c7900007c79000092790000c2790000127a0000ee880000448e0000e68e0000
+      m_ExpandedIDs: 32fbffffa86b0000d86b0000146c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -654,22 +654,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Particle Systems
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Particle Systems
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Mateusz\Documents\GitHub\SSGameJamSubmission2\SSGameJamSubmission\CranialLump-SusSkelSubmission
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 1cc70000
-    m_LastClickedID: 50972
-    m_ExpandedIDs: 00000000466f0000e6700000
+    m_SelectedIDs: 30730000
+    m_LastClickedID: 29488
+    m_ExpandedIDs: 00000000f2720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000466f0000
+    m_ExpandedIDs: 00000000f2720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -801,8 +801,8 @@ MonoBehaviour:
     y: 0
     width: 486
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}

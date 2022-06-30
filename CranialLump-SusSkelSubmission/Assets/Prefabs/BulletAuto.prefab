@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2928589157259656142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.978}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.07331311, y: 0.07331311, z: 0.07331311}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -114,8 +114,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   deathTimer: 5
-  enemyParticles: {fileID: 0}
-  enviroParticles: {fileID: 0}
+  enemyParticles: {fileID: 3008304969355585712, guid: 5c56c183415ca8f4c9016ba230ff5c1d,
+    type: 3}
+  enviroParticles: {fileID: 3008304969355585712, guid: 7b75fd5263890984b8247fb8587117f4,
+    type: 3}
   health: {fileID: 0}
 --- !u!54 &6413619700094503110
 Rigidbody:
@@ -132,7 +134,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &4166196668699932485
 GameObject:
   m_ObjectHideFlags: 0
