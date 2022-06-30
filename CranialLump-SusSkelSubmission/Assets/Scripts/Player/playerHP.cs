@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class playerHP : MonoBehaviour
 {
     public float maxHP;
-    public float currentHP;
+    [SerializeField]
+    public static float currentPlayerHP;
     public GameObject UIGameOverScreen;
 
     private Vector3 gibSpawn;
@@ -19,12 +20,12 @@ public class playerHP : MonoBehaviour
     void Start()
     {
         playerIsAlive = true;
-        currentHP = maxHP;
+        currentPlayerHP = maxHP;
     }
 
     void Update()
     {
-        if (currentHP <= 0f)
+        if (currentPlayerHP <= 0f)
         {
             //Disables Movement
             gameObject.GetComponent<RBMovement>().enabled = false;
@@ -61,6 +62,6 @@ public class playerHP : MonoBehaviour
     // Damage function, can be called by other scripts (E.G. Rocket Splash Damage)
     public void pTakeDamage(float damage)
     {
-        currentHP -= damage;
+        currentPlayerHP -= damage;
     }
 }
