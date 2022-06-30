@@ -27,13 +27,16 @@ public class enemyProjectile : MonoBehaviour
     }
     void OnCollisionEnter(Collision other)
     {
-        // Ignores collision if it hits itself or a player projectile
+        // Ignores collision if it hits something
         
+        /*
         if (other.gameObject.tag == "Enemy")
         {
             Physics.IgnoreCollision(other.transform.GetComponent<Collider>(), bCollider);
         }
+        */
         
+        if (false) {}
 
         // Deals damage and Instantiates particles wherether the projectile hits
         else 
@@ -51,7 +54,7 @@ public class enemyProjectile : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            else if (other.gameObject.tag == "Environment")
+            else if (other.gameObject.tag == "Environment" || other.gameObject.tag == "Enemy")
             {
                 if (explosionParticles != null)
                     Instantiate(explosionParticles, contact.point, Quaternion.LookRotation(Vector3.up, Vector3.up));
