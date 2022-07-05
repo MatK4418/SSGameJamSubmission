@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: eec6f4e7a6264324f9640b81855cf70d, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.039593432, g: 0.048933826, b: 0.09780037, a: 1}
+  m_IndirectSpecularColor: {r: 0.039600153, g: 0.04894269, b: 0.097807206, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -362,6 +362,11 @@ PrefabInstance:
       objectReference: {fileID: 1061469190}
     - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
+      propertyPath: validStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
       propertyPath: validStates.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 9b4e797f04542cb4388fecaf68d2b5d8,
@@ -398,7 +403,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 2.53
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6514855939107369854, guid: 39913558460bc704cae962e44749f6f1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39913558460bc704cae962e44749f6f1, type: 3}
 --- !u!4 &171774843 stripped
 Transform:
@@ -820,6 +826,11 @@ PrefabInstance:
       objectReference: {fileID: 1061469190}
     - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
         type: 3}
+      propertyPath: validStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
       propertyPath: validStates.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: da1a45bd596623c4f80154809bf716ce,
@@ -841,7 +852,13 @@ PrefabInstance:
       propertyPath: pTransform
       value: 
       objectReference: {fileID: 612234413}
-    m_RemovedComponents: []
+    - target: {fileID: 1509271509783297875, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
+      propertyPath: exportedStates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1509271509783297875, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -2141,7 +2158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &906752494
 Transform:
   m_ObjectHideFlags: 0
@@ -4293,6 +4310,11 @@ PrefabInstance:
       objectReference: {fileID: 1061469190}
     - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
         type: 3}
+      propertyPath: validStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 959912946753172969, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
       propertyPath: validStates.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 40addcb7f2c60664c9b2991378baf0fb,
@@ -4324,7 +4346,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -9.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1509271509783297875, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0,
+        type: 3}
+      propertyPath: exportedStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1509271509783297875, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0f4bb3f985cb40c44bc9c169ab74b7f0, type: 3}
 --- !u!4 &1942296163 stripped
 Transform:
@@ -4924,6 +4952,11 @@ PrefabInstance:
       objectReference: {fileID: 1061469190}
     - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
         type: 3}
+      propertyPath: validStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102199913402936160, guid: 39913558460bc704cae962e44749f6f1,
+        type: 3}
       propertyPath: validStates.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 1f0e1c4116fbcf949990bef668325c42,
@@ -4950,7 +4983,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -9.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6514855939107369854, guid: 39913558460bc704cae962e44749f6f1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39913558460bc704cae962e44749f6f1, type: 3}
 --- !u!4 &4830128458984411215
 Transform:

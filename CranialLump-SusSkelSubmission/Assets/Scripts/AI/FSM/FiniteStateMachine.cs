@@ -5,14 +5,13 @@ using UnityEngine.AI;
 
 public class FiniteStateMachine : MonoBehaviour
 {
-    AbstractFSMState currentState;
-
+    private AbstractFSMState currentState;
     private GameObject thisEnemy;
+
     [SerializeField]
     private GameObject playerObjectEditor;
-
-    [SerializeField]
-    private List<AbstractFSMState> validStates;
+    
+    public List<AbstractFSMState> validStates;
     private Dictionary<FSMStateType, AbstractFSMState> fsmStates;
 
     public void Awake()
